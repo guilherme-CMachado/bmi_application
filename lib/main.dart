@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: Home(),
   ));
 }
@@ -76,7 +77,7 @@ class _HomeState extends State<Home> {
                       labelText: "Peso (KG)",
                       labelStyle: TextStyle(color: Colors.green)),
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.green, fontSize: 25.0),
+                  style: TextStyle(color: Colors.green, fontSize: 20.0),
                   controller: weightController,
                 ),
                 TextField(
@@ -85,18 +86,18 @@ class _HomeState extends State<Home> {
                       labelText: "Altura (cm)",
                       labelStyle: TextStyle(color: Colors.green)),
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.green, fontSize: 25.0),
+                  style: TextStyle(color: Colors.green, fontSize: 20.0),
                   controller: hightController,
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
                   child: Container(
-                    height: 100.0,
+                    height: 50.0,
                     child: ElevatedButton(
                       onPressed: calculate,
                       child: Text(
                         "Calcular",
-                        style: TextStyle(color: Colors.white, fontSize: 25.0),
+                        style: TextStyle(color: Colors.white, fontSize: 20.0),
                       ),
                     ),
                   ),
